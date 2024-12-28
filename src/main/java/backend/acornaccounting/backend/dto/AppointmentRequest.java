@@ -8,6 +8,7 @@ public class AppointmentRequest {
     private String lastName;
     private String email;
     private String phone;
+    private boolean status; // Add getter and setter
     private LocalDate appointmentDate;
     private LocalTime appointmentTime;
 
@@ -42,6 +43,14 @@ public class AppointmentRequest {
 
     public void setPhone(String phone) {
         this.phone = phone;
+    }
+
+    public void setStatus(Boolean status) {
+        this.status = status;
+    }
+
+    public Boolean getStatus() {
+        return status;
     }
 
     public LocalDate getAppointmentDate() {

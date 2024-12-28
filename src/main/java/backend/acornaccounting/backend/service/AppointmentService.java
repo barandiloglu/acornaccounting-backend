@@ -27,6 +27,7 @@ public class AppointmentService {
         appointment.setPhone(request.getPhone());
         appointment.setAppointmentDate(request.getAppointmentDate());
         appointment.setAppointmentTime(request.getAppointmentTime());
+        appointment.setStatus(request.getStatus() != null ? request.getStatus() : false);
 
         // Save appointment
         Appointment savedAppointment = repository.save(appointment);

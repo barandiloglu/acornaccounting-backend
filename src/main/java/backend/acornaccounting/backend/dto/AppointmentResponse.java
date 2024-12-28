@@ -6,6 +6,7 @@ public class AppointmentResponse {
     private String lastName;
     private String email;
     private String phone;
+    private boolean status; // Add getter and setter
     private String appointmentDate; // String for JSON compatibility
     private String appointmentTime; // String for JSON compatibility
 
@@ -48,6 +49,14 @@ public class AppointmentResponse {
 
     public void setPhone(String phone) {
         this.phone = phone;
+    }
+
+    public void setStatus(Boolean status) {
+        this.status = status;
+    }
+
+    public Boolean getStatus() {
+        return status;
     }
 
     public String getAppointmentDate() {

@@ -16,6 +16,7 @@ public class Appointment {
     private String lastName;
     private String email;
     private String phone;
+    private Boolean status;
 
     private LocalDate appointmentDate;
     private LocalTime appointmentTime;
@@ -59,6 +60,14 @@ public class Appointment {
 
     public void setPhone(String phone) {
         this.phone = phone;
+    }
+
+    public void setStatus(Boolean status) {
+        this.status = status;
+    }
+
+    public Boolean getStatus() {
+        return status;
     }
 
     public LocalDate getAppointmentDate() {
